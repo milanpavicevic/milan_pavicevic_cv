@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+	<title>Formular</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<a href="HTML osnove.html">Osnove HTML-a</a><br>
+<a href="Za radoznale.html">Za radoznale</a><br><br>
+
+<h1>Informacije o polazniku</h1><br><br>
+
+<form method="POST">
+	<input type="text" name="Ime" required>Ime<br><br>
+	<input type="text" name="Prezime" required>Prezime<br><br>
+Pol:<br>
+	<input type="radio" name="gender" value="Muški" required>Muški<br>
+	<input type="radio" name="gender" value="Ženski" required>Ženski<br>
+	<input type="radio" name="gender" value="Drugo" required>Drugo<br><br>
+
+    <input type="date" name="datum" required>Datum rođenja<br><br>
+    <input type="email" name="email" required>Email<br><br>
+    <input type="password" minlength="7" required>Lozinka<br><br>
+
+    <p>Jezici koje govorite:</p>
+    <select name="Jezici" size="3">
+    	<option value="srpski" name="srpski">srpski</option>
+    	<option value="english" name="english">english</option>
+    	<option value="french" name="french">french</option>
+    	<option value="german" name="german">german</option>
+    	<option value="dutch" name="dutch">dutch</option>
+    	<option value="russian" name="russian">russian</option>
+    	<option value="chinese" name="chinese">chinese</option>
+    	<option value="indian" name="indian">indian</option>
+    	<option value="drugi" name="drugi">drugi</option>
+    </select>
+
+    <p>Programski jezici:</p>
+    <input type="checkbox" name="CSS">CSS
+    <input type="checkbox" name="HTML">HTML<br>
+    <input type="checkbox" name="Java">Java
+    <input type="checkbox" name="Javascript">Javascript<br>
+    <input type="checkbox" name="PHP">PHP
+    <input type="checkbox" name="Ruby">Ruby<br>
+    <input type="checkbox" name="Python">Python<br><br>
+
+    <input type="submit" value="Registruj se!">
+    <input type="reset" value="Obriši!">
+</form>
+</body>
+</html>

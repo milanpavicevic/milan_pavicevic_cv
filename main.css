@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(49, 138, 226, 0.87);
+    width: 90%;
+    margin: auto;
+}
+
+#cirilica {
+    display: inline-block;
+    position: relative;
+    left: 90%;
+}
+
+a {
+    color: white;
+}
+
+li {
+    list-style-position: inside;
+}
+
+#cvImg {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+nav {
+    border-radius: 25px;
+    background-image: radial-gradient(black 1%, rgba(10, 10, 10, 0.2) 50%);
+}
+
+#aProjekti {
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.cv, main p, form {
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    text-indent: 10px;
+    font-size: 18px;
+}
+
+h4 {
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+}
+#gH {
+    text-decoration: underline;
+}
+
+footer {
+    background-image: radial-gradient(black 5%, rgba(10, 10, 10, 0.2) 80%);
+    border-radius: 15px;
+    height: 100px;
+}

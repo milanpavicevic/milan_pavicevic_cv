@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+	<title>HTML osnove</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<div id="Vrh"></div>
+<a href="Za radoznale.html" target="_blank">Za radoznale</a><br>
+<a href="Formular.html" target="_blank">Informacije o polazniku</a><br><br>
+
+<h1 align="center">OSNOVE HTML-a</h1><hr align="center" width="350px">
+<br><br><br>
+
+<nav>
+	<ol>
+		<li><a href="#Šta je HTML">Šta je HTML?</a></li>
+		<li><a href="#Deklaracija">Deklaracija</a></li>
+		<li><a href="#HTML anatomija">HTML anatomija</a></li>
+		<li><a href="#Head">Head</a></li>
+		<li><a href="#Body">Body</a></li>
+		<li><a href="#Komentari">Komentari</a></li>
+		<li><a href="#Naslovi">Naslovi</a></li>
+		<li><a href="#Blokovi teksta">Blokovi teksta</a></li>
+		<li><a href="#Linkovi">Linkovi</a></li><br><br><br>
+	</ol>
+</nav>
+
+<div id="Šta je HTML">
+	<h2>Šta je HTML?</h2>
+	<p>HTML je skraćenica od:<br>Hyper<br>Text<br>Markup<br>Language<br>"Markap" jezici služe za "okruživanje" sirovog teksta informacijama koje kompjuter može da interpretira.<br>U HTML-u te informacije se zovu <b>HTML elementi.</b> Ovi elementi su često ugnježdeni (nested) jedni unutar drugih, gde svaki daje podatke o tipu i strukturi informacija koje će se prikazati u pretraživaču.
+	</p>
+</div><br><br>
+
+<div id="Deklaracija">
+	<h2>Deklaracija</h2>
+	<p>Svaki programski kod počinje deklaracijom koja pretraživaču (brauzeru) objavljuje kojim programskim jezikom je kod napisan.</p>
+	<p>U HTML-u ta deklaracija se prikazuje u formi <b>&lt;!DOCKTYPE html&gt;</b>.</p>
+</div><br><br>
+
+<div id="HTML anatomija">
+	<h2>HTML anatomija</h2>
+	<img src="http://www.webtech.com.hr/img/html_element.png" alt="sklop HTML elementa" height="350" width="500">
+	 <img align="right" src="http://hancockartanddesign.com/g118/resources/page-anatomy.png" alt="sklop HTML strane" height="500" width="500">
+	<p><b>*umesto termina "oznaka" mnogo češće se koristi termin "tag".</b></p>
+
+</div><br><br><br><br><br><br><br><br>
+
+<div id="Head">
+	<h2>Head</h2>
+	<p><b>&lt;head&gt;</b> element je metadata kontejner koji se postavlja između <b>&lt;html&gt; i &lt;body&gt;</b> taga.</p>
+	<p><b>Metadata</b> su podaci o HTML dokumentu, koji nisu vidljivi korisniku. Metadata definiše naslov dokumenta (u tabu), stil, linkove i drugo.</p>
+	<p><b>&lt;title&gt;</b> element:
+		<ul>
+			<li>definiše naslov u tabu</li>
+			<li>daje naslov kada se stranica dodaje u omiljene</li>
+			<li>prikazuje ime stranice u istoriji pretraživača</li>
+		</ul></p>
+</div><br><br>
+
+<div id="Body">
+	<h2>Body</h2>
+	<p><b>&lt;body&gt;</b> element definiše "telo" dokumenta. U njemu se nalazi celokupan sadržaj strane kao što su tekstovi, slike, video klipovi, tabele, linkovi... Tj. sav onaj sadržaj koji je vidljiv korisniku.</p>
+	<h3><strong>U HTML kodu može biti samo jedan &lt;body&gt; tag.</strong></h3>
+</div><br><br>
+
+<div id="Komentari">
+	<h2>Komentari</h2>
+	<p>Komentar u kodu je ekvivalent tekstualnoj zabelešci na margini.<br>Piše se u formi <b>&lt;!--sadržaj komentara--&gt;</b> i kao takav je nevidljiv za pretraživač tj. neće uticati na funkcionisanje programa. Unutar komentara mogu biti napomene, upozorenja ili čak predlozi za izmene koda u budućnosti.</p>
+</div><br><br>
+
+<div id="Naslovi">
+	<h2>Naslovi</h2>
+	<p>Naslovi (headings) se stavljaju unutar tagova <b>&lt;h&gt;</b>. Najvažniji (najveći) se stavlja pod tagove &lt;h1&gt;, a najmanji pod &lt;h6&gt;.</p>
+</div><br><br>
+
+<div id="Blokovi teksta">
+	<h2>Blokovi teksta</h2>
+	<p>Stavljaju se unutar tagova <b>&lt;p&gt; i &lt;div&gt;</b>.</p>
+	<p><b>&lt;p&gt;</b> tag definiše paragraf ili pasus. Pretraživač automatski dodaje margine pre i posle <b>&lt;p&gt;</b>elementa. Ova margina može da se promeni u CSS-u.</p>
+	<p><b>&lt;div&gt;</b> tag definiše sekcije tj. veće delove dokumenta. Koristi se da grupiše blok-elemente i stilizuje ih uz pomoć CSS-a.<br><b>&lt;div&gt;</b> elementi pomažu programerima da se lakše snađu unutar nekog glomaznog koda.</p>
+</div><br><br>
+
+<div id="Linkovi">
+	<h2>Linkovi</h2>
+	<p>Link (ili hiperlink) je komanda koja korisnika upućuje na neki drugi sadržaj, koji može biti unutar te stranice ili na nekoj sasvim drugoj adresi na vebu.<br>Link može biti bilo šta: tekst, slika, video... Definišu se uz pomoć <b>&lt;a&gt;</b> tagova. Između tagova se stavlja sadržaj koji je vidljiv korisniku, pa se klikom na taj sadržaj korisnik automatski upućuje na zadatu veb adresu. Npr: &lt;a href="URL adresa"&gt;LINK&lt;/a&gt; tj. <a href="https://www.udemy.com/courses/search/?q=The%20Complete%20Web%20Developer%20in%202018%3A%20Zero%20to%20Mastery&src=ukw&sort=most-reviewed">The Complete Web Developer in 2018: Zero to Mastery</a>.<br>Da bi se link otvorio u drugom tabu potrebno je unutar komande dodati atribut <i>target</i> uz vrednost "_blank", pa bi link onda izgledao ovako  &lt;a href="URL adresa" target="_blank"&gt;LINK&lt;/a&gt;, tj. <a href="https://www.udemy.com/courses/search/?q=The%20Complete%20Web%20Developer%20in%202018%3A%20Zero%20to%20Mastery&src=ukw&sort=most-reviewed" target="_blank">The Complete Web Developer in 2018: Zero to Mastery</a></p><br><br><br>
+</div>
+<a href="#Vrh"><h2 align="right">VRH &#8593;</h2></a>
+</body>
+</html>

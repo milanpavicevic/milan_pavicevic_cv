@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+	<title>Za radoznale</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<div id="Vrh"></div>	
+<a href="HTML osnove.html">Osnove HTML-a</a><br>
+<a href="Formular.html">Informacije o polazniku</a><br><br>
+
+<h1 align="center">ZA RADOZNALE</h1><br><br><br>
+
+<nav>
+<ul>
+	<li><a href="#Italik">Italik</a></li>
+	<li><a href="#Bold">Bold</a></li>
+	<li><a href="#Bojenje teksta">Bojenje teksta</a></li>
+	<li><a href="#Bojenje pozadine">Bojenje pozadine</a></li>
+	<li><a href="#Dodavanje slike">Dodavanje slike</a></li>
+	<li><a href="#audio">Dodavanje audio snimka</a></li>
+	<li><a href="#video">Dodavanje video snimka</a></li>
+	<ul>
+		<li><a href="#Youtube">Dodavanje snimka sa Youtube-a</a></li>
+	</ul>
+</ul>
+</nav>
+
+<div id="Italik">
+	<h2>Italik</h2>
+	<p>Postizanje <em>ITALIK</em> efekta se dobija stavljanjem odgovarajućeg teksta u <b>&lt;em&gt;</b> (emphasized) ili <b>&lt;i&gt;</b> (italik) tagove.</p><br><br>
+</div>
+
+<div id="Bold">
+	<h2>Bold</h2>
+	<p>Podebljavanje teksta <b>(boldiranje)</b> se postiže tagovima <b>&lt;b&gt;</b> ili <b>&lt;strong&gt;</b>. Oba daju isti efekat ali izbor odgovarajućeg taga će pomoći programeru da se snađe u kodu.</p>
+</div><br><br>
+
+<div id="Bojenje teksta">
+	<h2>Bojenje teksta</h2>
+	<p>Bojenje delova teksta se izvodi uz pomoć <b>style</b> atributa. Koristi se u formi: &lt;p style="color:red;"&gt;Crveni tekst&lt;/p&gt;. Što će onda izgledati ovako: <p style="color: red;">Crveni tekst.</p>Uz <i>style</i> komandu idu osobina i vrednost koji su ubačeni iz CSS-a.</p>
+</div><br><br>
+
+<div id="Bojenje pozadine">
+	<h2>Bojenje pozadine</h2>
+	<p>Za bojenje pozadine se takođe koristi <i>style</i> komanda ali uz osobinu <b><i>background-color</i></b>. Tj &lt;body style="background-color:green;"&gt;kod&lt;/body&gt;. Naravno, uvek treba birati boju koja neće smetati čitanju teksta strane.</p>
+</div><br><br>
+
+<div id="Dodavanje slike">
+	<h2>Dodavanje slike</h2>
+	<p>Slike se ubacuju uz pomoć <b>&lt;img&gt;</b> taga. Uz njega obavezno ide i <b><i>src</i></b> (source) atribut, koji daje URL adresu slike. Koristi se u formi: &lt;img src="URL"&gt;.<br>Uz standardni <i>src</i> atribut dobro je dodati i <b><i>alt</i></b> atribut. Uz njega se stavlja kratak opis te slike tako da u slučaju da ne može da se učita slika ili je spor internet pojaviće se ovaj opis na mestu slike.<br>Napomena: <b>ako slika nema smisla ne treba stavljati <i>alt</i> atribut</b>.</p>
+</div><br><br>
+
+<div id="audio">
+	<h2>Dodavanje audio snimka</h2>
+	<p>Audio sadržaj se ubacuje uz pomoć <b>&lt;audio&gt;</b> tagova. Primer primene:<br>&lt;audio controls&gt;<br>&lt;source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg"&gt;<br>&lt;source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg"&gt;Vaš pretraživač ne podržava ovaj audio fajl.<br>&lt;/audio&gt;<br>Što bi izgledalo ovako:<br><audio controls>
+  <source src=https://www.w3schools.com/html/horse.ogg type="audio/ogg">
+  <source src=https://www.w3schools.com/html/horse.ogg type="audio/mpeg">
+Vaš pretraživač ne podržava ovaj audio fajl.
+</audio></p>
+<p><b>&lt;source&gt;</b>element dozvoljava da preciziramo alternativne fajlove između kojih pretraživač može da bira. Otvoriće prvi koji prepozna.<br>HTML5 podržava tri audio formata: MP3, WAV i OGG.<br>Internet explorer podržava samo MP3, a Safari ne podržava OGG.</p>
+<pre>
+	Tipovi medija:    Format fajla:
+	  audio/mpeg           MP3
+	  audio/ogg            OGG
+	  audio/wav            WAV
+</pre>
+</div><br><br>
+
+<div id="video">
+	<h2>Dodavanje video snimka</h2>
+	<p>Video se dodaje uz pomoć <b>&lt;video&gt;</b>tagova. On takođe, mora sadržati <i>src</i> atribut, ali može sadržati i još neke u zavisnosti od toga koliko stila i kontrole želimo da damo korisniku. Između tagova se stavlja tekst "Video not supported" ili "Video nije podržan" koji će se pojaviti samo ako video ne može da se reprodukuje.<br>Atributi koji su obavezni su:<br><i>width</i> - širina videa u pikselima<br><i>height</i> - visina videa u pikselima<br><i>controls</i> - daje korisniku osnovne komande: play, pause i skip.</p>
+</div><br><br>
+
+<div id="Youtube">
+	<h2>Dodavanje snimka sa Youtube-a</h2>
+	<p>Ubacuje se uz pomoć tagova <b>&lt;iframe&gt;</b>. Najlakše ga je napraviti tako što se u YouTube-u otvori željeni video, zatim se desnim klikom na video otvori tabela iz koje se izabere opcija "Kopiraj kod za ugradnju". Zatim se na odgovarajućem mestu u kodu odradi "paste", čime se automatski ubacuju sve komande i atributi koji idu uz taj video.</p>
+	<p>Npr.:<br><br><iframe width="854" height="480" src="https://www.youtube.com/embed/dOt1nXE2JBI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+</div><br>
+
+<a href="#Vrh"><h2 align="right">VRH &#8593;</h2></a>
+</body>
+</html>
